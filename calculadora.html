@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calc.css">
+    <title>Document</title>
+</head>
+<body>    
+
+<form name="form1">
+    <table  summary="Tabela de calculo" cellpadding="8">
+    <tbody>
+        <tr>
+            <td colspan="2"  nowrap="nowrap">
+            <h2>Calculadora de Crédito</h2>
+            <br />    
+                <span class="textoPequeno">(Informe 3 valores e pressione o botão 'Calcular' para obter o 4º.)
+                </span>
+            </td>
+        </tr>
+
+        <!-- xxxxxxxxxxxxxxxxxx MESES xxxxxxxxxxxxxxxxxxxx -->
+
+        <tr>
+            <td>
+                <label for="meses">Nº de meses:</label></p>
+            </td>
+            <td>
+                <input name="periodo" id="meses" size="10" title="Digite o número de meses" tabindex="1" value="" type="text">
+            </td>
+        </tr>
+        
+        <!-- xxxxxxxxxxxxxxxxx JUROS xxxxxxxxxxxxxxxxxxxxx -->
+        
+        <tr>
+            <td scope="row">
+                <label for="juros">Taxa de juros mensal:</label>
+            </td>
+            <td>
+                <input name="juros" id="juros" size="10" tabindex="2" title="Digite taxa de juros mensal" value="" type="text">%
+            </td>
+        </tr>
+        
+        <!-- xxxxxxxxxxxxxxxxxx PRESTAÇÃO xxxxxxxxxxxxxxxxxxxx -->
+
+        <tr>
+        <td scope="row">
+            <label for="prestacao">
+            <br />
+            Valor da prestação:</p>
+            <p> <span style="font-size: 0.8em;">(Considera-se que a 1a. prestação não seja no ato.)</span><br />
+            </label>
+        </td>
+        
+        <td>
+            <input name="parcela" id="prestacao" size="16" tabindex="3" title="Digite valor da prestação" value="" type="text">
+        </td>
+        </tr>
+
+        <!-- xxxxxxxxxxxx VALOR DO EMPRESTIMO xxxxxxxxxxxxxxxx -->
+        
+        <tr>
+            <td scope="row">
+            <p> <label for="montante">
+            <br />
+            Valor financiado:
+            <br />
+        <span style="font-size: 0.8em;">(O Valor financiado não inclui o valor da entrada.)</span></label>
+        </td>
+        
+        <td>
+            <input name="montante" size="16" tabindex="4" title="Digite o valor financiado" id="montante" value="" type="text">
+        </td>        
+        </tr>
+
+        <!-- xxxxxxxxxxxxxxxxxxx BOTOES xxxxxxxxxxxxxxxxxxx -->
+
+        <tr>
+            <td colspan="2">
+                <input name="Button" type="button" tabindex="5" onClick="Calcular()" onKeyPress="Calcular()" value="Calcular">
+            
+                <input value="Limpar" onClick="Limpar()" onKeyPress="Limpar()" tabindex="6" type="button">
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>
+    <script src="js/calc.js"></script>
+    </body>
+</html>
+
