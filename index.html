@@ -36,27 +36,57 @@
         </div>
         <br />
         <div>
-          <!-- xxxxxxxxxxxxxxxxxx QTD PARCELAS xxxxxxxxx -->
-          <div class="parcelas">
-            <label for="meses">Quantidade de Parcelas Mensais</label>
+          <!-- xxxxxxxxxxxx VALOR DO EMPRESTIMO xxxxxxxxx -->
+        <div class="val_emp">
+          <label for="montante">
+            Valor do Empréstimo
             <br />
-            <input
-              name="periodo"
-              id="meses"
-              size="20"
-              title="Digite o número de meses"
-              tabindex="1"
-              value=""
-              type="text"
-            />
-          </div>
+            <span style="font-size: 0.8em"
+              >(O Valor financiado do Empréstimo não inclui o valor da
+              entrada.)</span
+            ></label
+          >
           <br />
+          <input
+            name="montante"
+            size="20"
+            tabindex="4"
+            title="Digite o Valor do Empréstimo"
+            id="montante"
+            value=""
+            type="text"
+          />
+        </div>
+        <br />
+        
+           <!-- xxxxxxxxxxxxxxxxxx PRESTAÇÃO xxxxxxxxxxxx -->
+        <div class="prestacao">
+          <label for="prestacao">
+            Valor da Prestação
+            <br />
+            <span style="font-size: 0.8em"
+              >(Considera-se que a 1a. prestação não seja no ato.)</span
+            >
+            <br />
+          </label>
+
+          <input
+            name="parcela"
+            id="prestacao"
+            size="20"
+            tabindex="3"
+            title="Digite o valor da Prestação"
+            value=""
+            type="text"
+          />
+        </div>
+        <br />
 
           <!-- xxxxxxxxxxxxxxxxx JUROS xxxxxxxxxxxxxxxxx -->
           <div class="input-group input-group-lg">
             <span style="font-size: 0.8em"
-              >Selecione o banco para obter o valor da taxa bancaria.</span
-            >
+              >Selecione o banco para obter o valor da taxa bancaria ou digite manualmente.</span
+            ><br/>
             <select class="bancos" name="select">
               <option>Selecione o Banco</option>
               <option value="3">BANCO DO BRASIL</option>
@@ -84,54 +114,23 @@
             <span class="input-group-text">%</span>
           </div>
         </div>
-
         <br />
 
-        <!-- xxxxxxxxxxxxxxxxxx PRESTAÇÃO xxxxxxxxxxxx -->
-        <div class="prestacao">
-          <label for="prestacao">
-            Valor da Prestação
+          <!-- xxxxxxxxxxxxxxxxxx QTD PARCELAS xxxxxxxxx -->
+          <div class="parcelas">
+            <label for="meses">Quantidade de Parcelas Mensais</label>
             <br />
-            <span style="font-size: 0.8em"
-              >(Considera-se que a 1a. prestação não seja no ato.)</span
-            >
-            <br />
-          </label>
-
-          <input
-            name="parcela"
-            id="prestacao"
-            size="20"
-            tabindex="3"
-            title="Digite o valor da Prestação"
-            value=""
-            type="text"
-          />
-        </div>
-        <br />
-
-        <!-- xxxxxxxxxxxx VALOR DO EMPRESTIMO xxxxxxxxx -->
-        <div class="val_emp">
-          <label for="montante">
-            Valor do Empréstimo
-            <br />
-            <span style="font-size: 0.8em"
-              >(O Valor financiado do Empréstimo não inclui o valor da
-              entrada.)</span
-            ></label
-          >
+            <input
+              name="periodo"
+              id="meses"
+              size="20"
+              title="Digite o número de meses"
+              tabindex="1"
+              value=""
+              type="text"
+            />
+          </div>
           <br />
-          <input
-            name="montante"
-            size="20"
-            tabindex="4"
-            title="Digite o Valor do Empréstimo"
-            id="montante"
-            value=""
-            type="text"
-          />
-        </div>
-        <br />
 
         <!-- xxxxxxxxxxxxxxxxxxx BOTOES xxxxxxxxxxxxxxxx -->
         <div class="botoes">
@@ -162,7 +161,7 @@
         </div>
         <br />
         <!--RODAPÉ-->
-        <p class="footer_raio">Raio Digital &copy; 2022</p>
+        <p class="footer_raio">Raio Digital &copy; 2022 - Versão 1.0</p>
       </form>
     </div>
     <script src="js/scripts.js"></script>
