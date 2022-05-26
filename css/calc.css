@@ -1,19 +1,154 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding-top: 6vh;
+  background-color: lightblue;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-label{
-    
+form {
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-table{
-    margin-left: auto; 
-    margin-right: auto;
-    border-radius: 0;
+.img {
+  text-align: center;
 }
 
-td{
-    text-align: center; 
-    background-color: #4899f7; 
-    border:none;
+h2 {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding-bottom: px;
+  margin: auto;
+  background-color: rgb(48, 117, 197);
+  border-radius: 12px;
+  box-shadow: 0 0 10px #fff;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+select{
+  font-size: 15px;
+  width: 50%;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 5px;
+  height: 25px;
+  width: 50%;
+}
+
+input {
+  font-size: 15px;
+  width: 50%;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 5px;
+  height: 25px;
+  width: 50%;
+}
+
+.botoes {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#calcular {
+  font-size: 14px;
+  background-color: #4899f7;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  float: left;
+  height: 30px;
+  width: 45%;
+  -webkit-transition-duration: 0.4s; /*Safari*/
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#calcular:hover {
+  background-color: #fff;
+  color: #4899f7;
+  font-weight: bold;
+}
+
+#limparCampos {
+  font-size: 14px;
+  background-color: #4899f7;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  float: right;
+  height: 30px;
+  width: 45%;
+  -webkit-transition-duration: 0.4s; /*Safari*/
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#limparCampos:hover {
+  background-color: #fff;
+  color: #4899f7;
+  font-weight: bold;
+}
+
+#btn-bancos {
+  font-size: 14px;
+  background-color: #4899f7;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  float: right;
+  height: 30px;
+  width: 100%;
+  -webkit-transition-duration: 0.4s; /*Safari*/
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#btn-bancos:hover {
+  background-color: #fff;
+  color: #4899f7;
+  font-weight: bold;
+}
+
+.footer_raio {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
