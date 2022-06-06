@@ -26,7 +26,7 @@
         </div>
         <div class="topo">
           <h2>Calculadora de Crédito</h2>
-          <h1>Simulação de Empréstimo</h1>
+          <h1>Simulação de Emprestimo</h1>
           <div>
             <span class="textoPequeno"
               >(Informe 3 valores e pressione o botão 'Calcular' para obter o
@@ -37,51 +37,57 @@
         <br />
         <div>
           <!-- xxxxxxxxxxxx VALOR DO EMPRESTIMO xxxxxxxxx -->
-          <div class="val_emp">
-            <label for="montante">
-              Valor do Empréstimo
-              <br />
-              <span style="font-size: 0.8em"
-                >(O Valor financiado do Empréstimo não inclui o valor da
-                entrada.)</span
-              ></label
+        <div class="val_emp">
+          <label for="montante">
+            Valor do Empréstimo
+            <br />
+            <span style="font-size: 0.8em"
+              >(O Valor financiado do Empréstimo não inclui o valor da
+              entrada.)</span
+            ></label
+          >
+          <br />
+          <input
+            name="montante"
+            size="20"
+            tabindex="1"
+            title="Digite o Valor do Empréstimo"
+            id="montante"
+            value=""
+            type="text"
+          />
+        </div>
+        <br />
+
+           <!-- xxxxxxxxxxxxxxxxxx PRESTAÇÃO xxxxxxxxxxxx -->
+        <div class="prestacao">
+          <label for="prestacao">
+            Valor da Prestação
+            <br />
+            <span style="font-size: 0.8em"
+              >(Considera-se que a 1a. prestação não seja no ato.)</span
             >
             <br />
-            <input
-              name="montante"
-              size="20"
-              tabindex="1"
-              title="Digite o Valor do Empréstimo"
-              id="montante"
-              value=""
-              type="text"
-            />
-          </div>
-          <br />
+          </label>
 
-          <!-- xxxxxxxxxxxxxxxxxx QTD PARCELAS xxxxxxxxx -->
-          <div class="parcelas">
-            <label for="meses">Quantidade de Parcelas Mensais</label>
-            <br />
-            <input
-              name="periodo"
-              id="meses"
-              size="20"
-              title="Digite o número de meses"
-              tabindex="2"
-              value=""
-              type="text"
-            />
-          </div>
-          <br />
+          <input
+            name="parcela"
+            id="prestacao"
+            size="20"
+            tabindex="2"
+            title="Digite o valor da Prestação"
+            value=""
+            type="text"
+          />
+        </div>
+        <br />
 
           <!-- xxxxxxxxxxxxxxxxx JUROS xxxxxxxxxxxxxxxxx -->
           <div class="input-group input-group-lg">
             <span style="font-size: 0.8em"
-              >Selecione o banco para obter o valor da taxa bancaria ou digite
-              manualmente.</span
-            ><br />
-            <select class="bancos" name="select" tabindex="3">
+              >Selecione o banco para obter o valor da taxa bancaria ou digite manualmente.</span
+            ><br/>
+            <select class="bancos" name="select">
               <option>Selecione o Banco</option>
               <option value="3">BANCO DO BRASIL</option>
               <option value="2,4">BANCO SANTANDER</option>
@@ -110,29 +116,21 @@
         </div>
         <br />
 
-        <!-- xxxxxxxxxxxxxxxxxx PRESTAÇÃO xxxxxxxxxxxx -->
-        <div class="prestacao">
-          <label for="prestacao">
-            Valor da Prestação
+          <!-- xxxxxxxxxxxxxxxxxx QTD PARCELAS xxxxxxxxx -->
+          <div class="parcelas">
+            <label for="meses">Quantidade de Parcelas Mensais</label>
             <br />
-            <span style="font-size: 0.8em"
-              >(Considera-se que a 1a. prestação não seja no ato.)</span
-            >
-            <br />
-          </label>
-
-          <input
-            name="parcela"
-            id="prestacao"
-            size="20"
-            tabindex="4"
-            title="Digite o valor da Prestação"
-            placeholder=""
-            value=""
-            type="text"
-          />
-        </div>
-        <br />
+            <input
+              name="periodo"
+              id="meses"
+              size="20"
+              title="Digite o número de meses"
+              tabindex="4"
+              value=""
+              type="text"
+            />
+          </div>
+          <br />
 
         <!-- xxxxxxxxxxxxxxxxxxx BOTOES xxxxxxxxxxxxxxxx -->
         <div class="botoes">
@@ -163,7 +161,7 @@
         </div>
         <br />
         <!--RODAPÉ-->
-        <p class="footer_raio">Projetado e Desenvevolvido - Raio Digital &copy; 2022 - Versão 1.1</p>
+        <p class="footer_raio">Raio Digital &copy; 2022 - Versão 1.0</p>
       </form>
     </div>
     <script src="js/scripts.js"></script>

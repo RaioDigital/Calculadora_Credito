@@ -2,10 +2,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   padding-top: 6vh;
-  background-color: lightblue;
+  background-image: url("../img/calculadora_de_credito_sebrae.png");  
   background-size: cover;
   background-attachment: fixed;
 }
+
+
+
+
 
 form {
   margin: 0px;

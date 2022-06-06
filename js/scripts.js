@@ -408,7 +408,8 @@ function Limpar() {
   document.form1.juros.value = "";
   document.form1.parcela.value = "";
   document.form1.montante.value = "";
-  document.form1.select.value = "Selecione o Banco"; /*Alterado 28/05 */
+  document.form1.select.value = "Selecione o Banco";
+  montante.focus(); /*Alterado 28/05 */
 }
 
 function Calcular(opcao) {
@@ -603,3 +604,6 @@ $('.bancos').on('change', function() {
   var plan = $(this).val();
   $('#juros').val(plan);
 });
+
+
+
