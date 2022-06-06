@@ -4,12 +4,8 @@ body {
   padding-top: 6vh;
   background-image: url("../img/calculadora_de_credito_sebrae.png");  
   background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
-
-
-
-
 
 form {
   margin: 0px;
