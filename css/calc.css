@@ -69,6 +69,11 @@ input {
   width: 50%;
 }
 
+.textoPequeno {
+  color: #ffe135;
+  
+}
+
 .botoes {
   padding-top: 10px;
   padding-bottom: 10px;
