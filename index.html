@@ -16,6 +16,7 @@
   <body>
     <div class="container">
       <form name="form1">
+        
         <div class="img">
           <img
             src="img/logo_sebrae-01.png"
@@ -24,17 +25,23 @@
             height="120"
           />
         </div>
+        
         <div class="topo">
           <h2>Calculadora de Crédito</h2>
           <h1>Simulação de Empréstimo</h1>
           <div>
             <span class="textoPequeno"
-              >(Informe 3 valores e pressione o botão 'Calcular' para obter o
-              4º.)
+              >Informe 3 valores e pressione o botão <strong>'Calcular'</strong> para obter o 4º.
+            </span>
+            <br>
+            <span style="font-size: 0.8em"
+              >Fonte de dados das taxas de juros: <a id="fonte_dados" href="https://www.bcb.gov.br/estatisticas/reporttxjuros/?parametros=tipopessoa:1;modalidade:220;encargo:101">Banco Central</a>
             </span>
           </div>
         </div>
+
         <br />
+        
         <div>
           <!-- xxxxxxxxxxxx VALOR DO EMPRESTIMO xxxxxxxxx -->
           <div class="val_emp">
@@ -42,8 +49,8 @@
               Valor do Empréstimo
               <br />
               <span style="font-size: 0.8em"
-                >(O Valor financiado do Empréstimo não inclui o valor da
-                entrada.)</span
+                >O Valor financiado do Empréstimo não inclui o valor da
+                entrada.</span
               ></label
             >
             <br />
@@ -57,6 +64,7 @@
               type="text"
             />
           </div>
+
           <br />
 
           <!-- xxxxxxxxxxxxxxxxxx QTD PARCELAS xxxxxxxxx -->
@@ -77,17 +85,20 @@
 
           <!-- xxxxxxxxxxxxxxxxx JUROS xxxxxxxxxxxxxxxxx -->
           <div class="input-group input-group-lg">
-            <span style="font-size: 0.8em"
-              >Selecione o banco para obter o valor da taxa bancaria ou digite
-              manualmente.</span
-            ><br />
+            <span style="font-size: 0.8em">
+              Selecione o banco para obter o valor da taxa bancaria ou digite
+              manualmente.
+            </span>
+                        
+            <br />
+            
             <select class="bancos" name="select" tabindex="3">
               <option>Selecione o Banco</option>
-              <option value="3">BANCO DO BRASIL</option>
-              <option value="2,4">BANCO SANTANDER</option>
-              <option value="3,99">ITAÚ UNIBANCO</option>
-              <option value="3">BRADESCO</option>
-              <option value="3,3">CAIXA ECONÔMICA</option>
+              <option value="1,74">BANCO DO BRASIL</option>
+              <option value="1,67">BANCO SANTANDER</option>
+              <option value="1,64">ITAÚ UNIBANCO</option>
+              <option value="1,78">BRADESCO</option>
+              <option value="1,43">CAIXA ECONÔMICA</option>
             </select>
           </div>
           <br />
@@ -95,7 +106,7 @@
           <div class="juros">
             <label for="juros">Taxa de Juros Mensal</label>
             <br />
-
+            
             <input
               id="juros"
               type="text"
@@ -103,7 +114,7 @@
               class="form-control payment-value"
               title="Escolha a taxa de juros mensal"
               value=""
-              placeholder="Ex.: 3 - 2,4 - 3,99"
+              placeholder="Ex.: 1 - 1,74"
             />
             <span class="input-group-text">%</span>
           </div>
@@ -114,10 +125,6 @@
         <div class="prestacao">
           <label for="prestacao">
             Valor da Prestação
-            <br />
-            <span style="font-size: 0.8em"
-              >(Considera-se que a 1a. prestação não seja no ato.)</span
-            >
             <br />
           </label>
 
@@ -134,7 +141,7 @@
         </div>
         <br />
 
-        <!-- xxxxxxxxxxxxxxxxxxx BOTOES xxxxxxxxxxxxxxxx -->
+        <!-- xxxxxxxxxxxxxxxxxxx BOTÕES xxxxxxxxxxxxxxxx -->
         <div class="botoes">
           <button
             class="btn btn-primary btn-md"
@@ -162,8 +169,10 @@
           </button>
         </div>
         <br />
-        <!--RODAPÉ-->
-        <p class="footer_raio">Projetado e Desenvevolvido - Raio Digital &copy; 2022 - Versão 1.1</p>
+        
+        <!--RODAPÉ-->        
+        <p class="footer_raio" style="font-size: 0.8em">Raio Digital &copy; 2022 - Versão 1.2</p>
+
       </form>
     </div>
     <script src="js/scripts.js"></script>
